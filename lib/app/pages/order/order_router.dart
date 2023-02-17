@@ -1,0 +1,31 @@
+import 'package:delivery_app/app/dto/order_product_dto.dart';
+import 'package:delivery_app/app/pages/order/order_controller.dart';
+import 'package:delivery_app/app/pages/order/order_page.dart';
+import 'package:delivery_app/app/repositories/order/order_repository.dart';
+import 'package:delivery_app/app/repositories/order/order_repository_impl.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+class OrderRouter {
+  OrderRouter._();
+
+  static Widget get page => MultiProvider(
+        providers: [
+          Provider<OrderRepository>(
+            create: (context) => OrderRepositoryImpl(
+              dio: context.read(),
+            ),
+          ),
+          Provider(
+            create: (context) => OrderController(
+              context.read(),
+            ),
+          ),
+        ],
+        builder: (context, child) {
+          final bag = ModalRoute.of(context)!.settings.arguments
+              as List<OrderProductDto>;
+          return OrderPage(bag: bag);
+        },
+      );
+}
