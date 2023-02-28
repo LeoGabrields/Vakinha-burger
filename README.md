@@ -1,6 +1,6 @@
 # delivery_app
 
-Projeto desenvolvido na semana Imersão Dart Week 9, administrada pelo Professor [Rodrigo Rahman](https://github.com/rodrigorahman/flutter_credit_card). Onde foi realizado a criação de um aplicativo para um delivery de hamburgueria.
+Projeto desenvolvido na semana Imersão Dart Week 9, administrada pelo Professor [Rodrigo Rahman](https://github.com/rodrigorahman). Onde foi realizado a criação de um aplicativo para um delivery de hamburgueria.
 
 ## Tecnologias Estudadas
 
