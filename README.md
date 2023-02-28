@@ -1,16 +1,16 @@
 # delivery_app
 
-A new Flutter project.
+Projeto desenvolvido na semana Imersão Dart Week 9, administrada pelo Professor [Rodrigo Rahman](https://github.com/rodrigorahman/flutter_credit_card). Onde foi realizado a criação de um aplicativo para um delivery de hamburgueria.
 
-## Getting Started
+## Tecnologias Estudadas
 
-This project is a starting point for a Flutter application.
+- Consulta da API usando o package Dio
+- BLoC como Gerenciamento de Estado
+- Fluxo de Login e Logout com a aplicação
+- Persistência de dados com o SharedPreferences
+- Pattern Matching com match
+- Extensions
+- Slivers
+- Providers
+- Singleton
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
